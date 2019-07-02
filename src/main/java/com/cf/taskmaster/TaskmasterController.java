@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 
 @RestController
 public class TaskmasterController {
@@ -30,7 +31,7 @@ public class TaskmasterController {
     }
 
     @PutMapping("/tasks/{id}/state")
-    public void updateTask(@PathVariable String id) {
+    public void updateTask(@PathVariable UUID id) {
         Task task = taskRepository.findById(id).get();
         String status = task.getStatus();
         if (status.equals("Available")) {
@@ -44,7 +45,7 @@ public class TaskmasterController {
     }
 
     @DeleteMapping("tasks/{id}")
-    public void deleteTask(@PathVariable String id) {
+    public void deleteTask(@PathVariable UUID id) {
         taskRepository.deleteById(id);
     }
 }
