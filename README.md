@@ -6,13 +6,13 @@ This is a Code Fellows project that is to make a "Task Master" application.
 [My Task Master API](http://stevechutaskmaster.us-west-2.elasticbeanstalk.com/)
 
 ## Description
-* Get `\tasks` - get all tasks
+* Get `/tasks` - get all tasks
 
-* Post `\tasks` - add new task; put data into request body in JSON format
+* Post `/tasks` - add new task; put data into request body in JSON format
 
-* Put `\tasks\{id}\state` - updates task based on id
+* Put `/tasks/{id}/state` - updates task based on id
 
-* Delete `\tasks\{id}` - deletes task by id
+* Delete `/tasks/{id}` - deletes task by id
 
 ## Contributors
 * Stephen Chu, [stephenchu530](https://github.com/stephenchu530)
