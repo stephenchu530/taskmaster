@@ -20,7 +20,7 @@ The following are the provided endpoints:
   ]
   ```
   
-* `GET` request to `/users/{name}/tasks` - get all tasks in JSON format as follows assigned to a specific `assignee`:
+* `GET` request to `/users/{assignee}/tasks` - get all tasks in JSON format assigned to a specific `assignee`:
   
 * `POST`request to `/tasks` - add new task; put data for new entry into the request body in JSON format as follows:
   ```
