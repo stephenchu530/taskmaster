@@ -5,13 +5,11 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.lang.UsesSunHttpServer;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 
+@CrossOrigin
 @RestController
 public class TaskmasterController {
     private DynamoDBMapper dynamoDBMapper;
