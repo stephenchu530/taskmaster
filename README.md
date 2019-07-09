@@ -41,6 +41,8 @@ The following are the provided endpoints:
   
 * `DELETE` request to `/tasks/{id}` - deletes task by id
 
+* `POST` request to `/tasks/{id}/images` - adds an image to the task given the id
+
 ## Contributors
 * Stephen Chu, [stephenchu530](https://github.com/stephenchu530)
 
