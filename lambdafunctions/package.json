@@ -1,0 +1,23 @@
+{
+  "name": "lambdaimageresize",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephenchu530/lambdaimageresize.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephenchu530/lambdaimageresize/issues"
+  },
+  "homepage": "https://github.com/stephenchu530/lambdaimageresize#readme",
+  "dependencies": {
+    "async": "^3.1.0",
+    "gm": "^1.23.1"
+  }
+}
