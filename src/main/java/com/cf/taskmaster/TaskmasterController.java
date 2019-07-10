@@ -72,6 +72,9 @@ public class TaskmasterController {
         String imageUrl = this.s3Client.uploadFile(file);
         Task task = taskRepository.findById(id).get();
         task.setImageUrl(imageUrl);
+        String tmpUrl = imageUrl.substring(0, imageUrl.length() - 4) + "-thumb" + imageUrl.substring(imageUrl.length() - 4);
+        tmpUrl = tmpUrl.substring(0, 35) + "resized" + tmpUrl.substring(35);
+        task.setThumbUrl(tmpUrl);
         taskRepository.save(task);
         return task;
     }
